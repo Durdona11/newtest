@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+.container{
+    width: 100vw;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #ED9595;
+    padding: 132px 132px 133px 132px;
+}
+.box_one{
+    width: 1080px;
+    height: 731px;
+    padding: 64px 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+}
+.monthly{
+    text-align: center;
+    gap: 10px;
+    font-family: 'Inter',sans-serif;
+}
+.check {
+    width: 38px;
+    height: 22px;
+    border-radius: 20px;
+    background: #e7e7e9;
+    padding: 4px;
+  }
+  .check::before {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    background-color: #9e9ea7;
+    /* margin: 5px; */
+    transition: 0.4s;
+  }
+  input:checked + .check::before {
+    transform: translateX(5px);
+    transition: 0.4s;
+  }
+  input:checked + .check {
+    background-color: rgb(14, 3, 40);
+  }
+  input {
+    display: none;
+  }
+  input:checked + .check + span {
+    display: block;
+    color: red;
+  }
+.one{
+    display: inline-flex;
+    padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+.one p{
+    color: #3D3D4E;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; 
+    text-transform: capitalize;
+}
+.two p{
+color: #EA4C89;
+font-family: 'Inter',sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+margin-bottom: 32px; 
+}
+.all{
+    display: flex;
+    gap: 48px;
+
+}
+.card {
+    display: flex;
+    width: 328px;
+    height: 507px;
+    padding: 32px 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #E7E7E9;
+    background: #FFF;
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.02);
+}
+.card:hover{
+   background: #060432;
+}
+.card:hover h1{
+    color: #E7E7E9;
+}
+.card:hover p{
+    color: #E7E7E9;
+}
+.card:hover b{
+    color: #E7E7E9;
+}
+.card:hover h2{
+    color: #E7E7E9;
+}
+.card h2{
+    color: #0D0C22;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.card h1{
+    color: #0D0C22;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+ .card p{
+    color: #3D3D4E;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+.card span{
+    color: #F082AC;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px; 
+    margin-bottom: 16px;
+}
+ .card button{
+    display: flex;
+    padding: 10px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #EA4C89;
+    color: #FFF;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 30px;
+
+}
+ .card b{
+    width: 258px;
+    color: #0D0C22;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 25px; 
+}
+.chek{
+    display: flex;
+    width: 245px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.chek img{
+    margin-right: 7px;
+}
+.chek p{
+    color: #0D0C22;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
